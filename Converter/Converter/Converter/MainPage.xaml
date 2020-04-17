@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Converter.MainPage">
+
+    <StackLayout>
+        <Entry  Placeholder="0.0" Keyboard="Default" VerticalTextAlignment="End" x:Name="Input" FontSize="40"></Entry>
+        <Picker Title="Converter" Grid.Column="0" Grid.Row="1" x:Name="functionList" SelectedIndexChanged="Selected"/>
+        <Entry  Text="0.0" VerticalTextAlignment="End" x:Name="Output" IsReadOnly="True" FontSize="40"></Entry>
+        <Button  Text="Конвертировать" x:Name="Convert" Clicked="onConvertClicked"></Button>
+        <Button  Text="Очистить" x:Name="Clear" Clicked="onClearClicked"></Button>
+    </StackLayout>
+    
+</ContentPage>

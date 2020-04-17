@@ -1,0 +1,14 @@
+{
+  "name": "secundant",
+  "version": "1.0.0",
+  "description": "Secundomer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "cherbakov.2010@mail.ru",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^8.2.1"
+  }
+}
